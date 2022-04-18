@@ -38,6 +38,27 @@ namespace NLayer.Repository
             //yukarıdaki örnek yerine aşağıda ki gibi de yazabiliriz Fakat birden fazla olacağı için kod kalabalığı oluşturur.
             //modelBuilder.ApplyConfiguration(new ProductConfiguration());
 
+
+            modelBuilder.Entity<ProductFeature>().HasData(
+                new ProductFeature()
+                    {
+                        Id = 1,
+                        Color = "Kırmızı",
+                        Height = 100,
+                        Width = 200,
+                        ProductId = 1
+                    },
+
+                 new ProductFeature()
+                 {
+                     Id = 2,
+                     Color = "Mavi",
+                     Height = 200,
+                     Width = 300,
+                     ProductId = 2
+                 });
+            
+            
             base.OnModelCreating(modelBuilder);
         }
 
