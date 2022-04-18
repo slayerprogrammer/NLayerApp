@@ -20,7 +20,7 @@ namespace NLayer.Repository.Seeds
                     CategoryId = 1, 
                     Price = 10,
                     Stock = 5, 
-                    CreatedDate = DateTime.Now, 
+                    CreatedDate = DateTime.UtcNow, 
                     IsActive = true, 
                     IsDelete = false },
 
@@ -30,7 +30,7 @@ namespace NLayer.Repository.Seeds
                     CategoryId = 1,
                     Price = 50,
                     Stock = 10, 
-                    CreatedDate = DateTime.Now, 
+                    CreatedDate = DateTime.UtcNow, 
                     IsActive = true, 
                     IsDelete = false },
 
@@ -39,7 +39,7 @@ namespace NLayer.Repository.Seeds
                     CategoryId = 1,
                     Price = 100,
                     Stock = 20, 
-                    CreatedDate = DateTime.Now, 
+                    CreatedDate = DateTime.UtcNow, 
                     IsActive = true, 
                     IsDelete = false },
 
@@ -50,7 +50,7 @@ namespace NLayer.Repository.Seeds
                     CategoryId = 2,
                     Price = 50,
                     Stock = 10,
-                    CreatedDate = DateTime.Now,
+                    CreatedDate = DateTime.UtcNow,
                     IsActive = true,
                     IsDelete = false
                 });
