@@ -8,7 +8,7 @@ namespace NLayer.Core.Repositories
 
         //IQueryable yazmamızın sebebi ek olarak orderby veya
         //başka sorgulamalar yapmak için daha veritabanına gitmediğimiz için.
-        IQueryable<T> GetAll(Expression<Func<T, bool>> expression);
+        IQueryable<T> GetAll();
 
         //example: productRepository.Where(x=>x.Id > 5)
         //OrderBy.ToListAsync();

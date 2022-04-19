@@ -1,11 +1,10 @@
-﻿using NLayer.Repository;
-using Microsoft.EntityFrameworkCore;
-using System.Reflection;
-using NLayer.Core.UnitOfWorks;
-using NLayer.Repository.UnitOfWorks;
+﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Repositories;
+using NLayer.Core.UnitOfWorks;
+using NLayer.Repository;
 using NLayer.Repository.Repositories;
-using NLayer.Core.Services;
+using NLayer.Repository.UnitOfWorks;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
