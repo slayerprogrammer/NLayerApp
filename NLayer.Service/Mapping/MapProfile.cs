@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NLayer.Core.DTOs.Category;
+using NLayer.Core.DTOs.Custom;
 using NLayer.Core.DTOs.Product;
 using NLayer.Core.DTOs.ProductFeature;
 using NLayer.Core.Models;
@@ -17,6 +18,7 @@ namespace NLayer.Service.Mapping
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<ProductFeature, ProductFeatureDto>().ReverseMap();
             CreateMap<ProductUpdateDto, Product>();
+            CreateMap<Product, ProductWithCategoryDto>();
 
         }
     }
