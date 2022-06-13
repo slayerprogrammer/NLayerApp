@@ -42,7 +42,7 @@ namespace NLayer.API.Controllers
         [ServiceFilter(typeof(NotFoundFilter<Product>))]
         //Get /api/product/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(long id)
         {
             var product = await _service.GetByIdAsync(id);
             var productDto = _mapper.Map<ProductDto>(product);
@@ -66,7 +66,7 @@ namespace NLayer.API.Controllers
 
         // DELETE /api/product/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Remove(int id)
+        public async Task<IActionResult> Remove(long id)
         {
             var product = await _service.GetByIdAsync(id);
             await _service.RemoveAsync(product);
